@@ -1,0 +1,69 @@
+:root {
+  --bg-color: #000;
+  --text-color : #fff;
+  --border-color : #fff;
+  --footer-color : #CCC;
+}
+
+body.dark {
+  --bg-color: #fff;
+  --text-color: #000;
+  --border-color : #000;
+   --footer-color : #393939;
+  /* --card-bg: #1e1e1e; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  overflow-x: hidden;
+  color: var(--text-color);
+  font-family: sans-serif;
+  position: relative;
+}
+
+
+/* Container for stars */
+.stars {
+  width: 100%;
+  height: 120vh;
+  background: transparent;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Star element */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle 5s linear infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+
+.app {
+    width: 80%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}

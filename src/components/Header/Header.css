@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    border-top: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.logo {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    transition: background 0.2s, color 0.2s;
+    border-radius: 8px;
+}
+
+.nav-links button:hover {
+    background-color: #2C2C2C;
+    color: #f1f1f1;
+}
